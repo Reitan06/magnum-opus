@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Game.css">
+</head>
+
+<body>
+    <header>
+        <div> <a href="index.html">Return</a></div>
+        <div>
+            Score: <span id="score-display">0</span>
+        </div>
+        <div>
+            THE ANIMAL HUNTER 2D
+        </div>
+        <div>
+            timer: <span id="timer">60</span>
+        </div>
+    </header>
+    <div id="ammo">
+        
+    </div>
+    <main id="main-container">
+        
+        <div id="endscreen">
+            Great job! Your score was <span id="end-score-display">0</span>
+            The highscore was <span id="end-highscore-display">0</span>
+        </div>
+        <div id="menu">
+            THE ANIMAL HUNTER 2D
+            <div>
+                <button onclick="start(this)" style="background-image: url(Photos/wood1.jpg);">click here to start the hunt</button>
+            </div>
+        
+        </div>
+        <div id="personer">
+            <img src="Photos/deer.png" alt="refresh" id="animal" onclick="klikk(this)">
+
+        </div>
+        
+    </main>
+    <footer>
+        <div></div>
+    </footer>
+    <script src="game.js"></script>
+</body>
+
+</html>

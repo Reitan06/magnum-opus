@@ -1,0 +1,136 @@
+#animal {
+    border-radius: 50%;
+    height: auto;
+    color: black;
+    height: 150px;
+    position: fixed;
+    cursor: url('Photos/Crosshair1.png') 50 50, auto;
+    display: none;
+}
+
+body {
+    
+    background-blend-mode: darken;
+    height: 100vh;
+    cursor: url('Photos/Crosshair1.png') 50 50, auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0%;
+    
+}
+.clicked-image {
+    max-width: 200px; 
+    max-height: 200px; 
+  }
+
+main {
+    background-image: url(Photos/backimg.png);
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu {
+    background-image: url(Photos/wood1.jpg);
+    background-size: cover;
+    opacity: 99%;
+    height: 60vh;
+    width: 700px;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+div button {
+    height: 20vh;
+    width: 90%px;
+    color: white;
+    font-size: 20px;
+}
+div {
+    display: flex;
+    justify-content: center;
+}
+header {
+    height: 10vh;
+    background-image: url(Photos/wood1.jpg);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+header div {
+font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#endscreen {
+    background-image: url(Photos/wood1.jpg);
+    background-size: cover;
+    opacity: 90%;
+    height: 60vh;
+    width: 700px;
+    border-radius: 25%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+    font-size: x-large;
+    color: whitesmoke;
+}
+
+#end-score-display {
+    font-size: 30px;
+    color: red;
+}
+
+#ammo {
+    position: fixed;
+    left: 0px;
+    top: 400px;
+    width: 10%;
+    height: 50vh;
+    background-image: url(Photos/wood1.jpg);
+    border: 10px solid rgb(87, 69, 47);
+    border-radius: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message-box{
+    position: fixed;
+    background-image: url(Photos/wood1.jpg);
+    background-size: cover;
+    opacity: 90%;
+    height: 30vh;
+    width: 200px;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: larger;
+    color: whitesmoke;
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration:double;
+    text-decoration: underline;
+}

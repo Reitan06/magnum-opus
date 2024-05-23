@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faget IT</title>
+    <link rel="stylesheet" href="mainpage.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Introduksjon av it Faget</h1>
+    </header>
+
+    <main id="main-content">
+        <div id="hero">
+            <div class="html"><a href="html.html">Klikk her for å lære om html</a></div>
+            <div class="css"><a href="css.html">Klikk her for å lære om CSS</a></div>
+            <div id="js"><a href="js.html">Klikk her for å lære om JS</a>
+                <img id="ball" src="Photos/fotball.png" alt="ball">
+            </div>
+        </div>
+    
+        <section id="articles">
+            <article class="info">
+                <h2>Velkommen til IT!<h2>
+                <p>IT er et av de mest dagsaktuelle fagene man kan velge på vgs med tanke på ny teknologi. Jeg har hatt stor glede av faget og det tror jeg du også vil ha. Denne nettsiden er et lite innblikk i hva man kan lage etter 1 år med IT. DU vil også lære å lage spill som dette under.</p>
+                <a href="shooter.html">Et spill som du kan lage</a>
+            </article>
+            <article class="info">
+                <h2>Hva er HTML?</h2>
+                <p>HTML er standard markup-språk for å lage nettsider...</p>
+                <a href="html.html">Les mer</a>
+            </article>
+            <article class="info">
+                <h2>Hva er CSS?</h2>
+                <p>CSS er språket vi bruker for å style et HTML-dokument...</p>
+                <a href="css.html">Les mer</a>
+            </article>
+            <article class="info">
+                <h2>Hva er JavaScript?</h2>
+                <p>JavaScript er et programmeringsspråk som brukes for å gjøre websider interaktive...</p>
+                <a href="js.html">Les mer</a>
+            </article>
+        </section>
+    
+        <section id="contact">
+            <h2>Kontakt Oss</h2>
+            <form id="contact-form">
+                <label for="name">Navn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Melding:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    
+    </main>
+    
+    <script src="mainpage.js"> </script>
+    <footer>
+        <p>&copy; 2024 IT intro. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

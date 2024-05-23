@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Læringsportalen</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<body>
+    <header>
+        <h1>Velkommen til CSS Læringsportalen!</h1>
+        <p>Lær hvordan du kan style nettsidene dine med CSS.</p>
+        <h2> <a href="index.html">Return to mainpage</a></h2>
+    </header>
+    <main>
+        <section>
+            <h2>Grunnleggende CSS-struktur</h2>
+            <p>En CSS-fil inneholder regler som beskriver hvordan HTML-elementer skal se ut. Her er et eksempel på hvordan en enkel CSS-regel ser ut:</p>
+            <pre><code>body {
+    background-color: #F6FFF8;
+    color: #6B9080;
+    font-family: Arial, sans-serif;
+}</code></pre>
+        </section>
+        <section>
+            <h2>HTML med CSS</h2>
+            <p>Her er et eksempel på en HTML-side som bruker CSS for styling:</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Min Første Stilige Nettside&lt;/title&gt;
+    &lt;link rel="stylesheet" type="text/css" href="stil.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Velkommen til min stilige nettside!&lt;/h1&gt;
+    &lt;p&gt;Dette er et avsnitt med tekst.&lt;/p&gt;
+    &lt;ul&gt;
+        &lt;li&gt;Første punkt&lt;/li&gt;
+        &lt;li&gt;Andre punkt&lt;/li&gt;
+        &lt;li&gt;Tredje punkt&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+        <section>
+            <h2>CSS-fil (stil.css)</h2>
+            <p>Her er CSS-koden som stiler HTML-en ovenfor:</p>
+            <pre><code>body {
+    background-color: #F6FFF8;
+    color: #6B9080;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #6B9080;
+    text-align: center;
+}
+
+p {
+    background-color: #EAF4F4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul {
+    background-color: #EAF4F4;
+    padding: 10px;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+li {
+    margin: 5px 0;
+}</code></pre>
+        </section>
+        <section>
+            <h2>Klasser og ID-er</h2>
+            <p>I CSS kan du bruke klasser og ID-er for å målrette spesifikke elementer:</p>
+            <ul>
+                <li><strong>Klasser</strong> bruker et punktum (.) og kan brukes på flere elementer. Eksempel: <code>.min-klasse</code></li>
+                <li><strong>ID-er</strong> bruker et hashtag (#) og må være unike. Eksempel: <code>#min-id</code></li>
+            </ul>
+            <p>Her er et eksempel:</p>
+            <pre><code>&lt;!-- HTML --&gt;
+&lt;p class="min-klasse"&gt;Dette er et avsnitt med en klasse.&lt;/p&gt;
+&lt;div id="min-id"&gt;Dette er en div med en ID.&lt;/div&gt;
+
+&lt;!-- CSS --&gt;
+.min-klasse {
+    color: #6B9080;
+}
+
+#min-id {
+    background-color: #EAF4F4;
+    padding: 10px;
+}</code></pre>
+        </section>
+        <section>
+            <h2>Pseudo-selektorer og Pseudo-klasser</h2>
+            <p>Pseudo-selektorer og pseudo-klasser brukes til å målrette elementer i spesifikke tilstander eller posisjoner:</p>
+            <ul>
+                <li><strong>Pseudo-klasser</strong> brukes til å stile elementer i en bestemt tilstand. Eksempel: <code>a:hover</code> (når en lenke blir hovret over)</li>
+                <li><strong>Pseudo-selektorer</strong> brukes til å stile spesifikke deler av et element. Eksempel: <code>p::first-line</code> (den første linjen i et avsnitt)</li>
+            </ul>
+            <p>Her er noen eksempler:</p>
+            <pre><code>a:hover {
+    color: #EAF4F4;
+    background-color: #6B9080;
+}
+
+p::first-line {
+    font-weight: bold;
+}</code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>Ha det gøy med å style HTML-sidene dine med CSS! 😊</p>
+        <p>© 2024 CSS Læringsportalen. Alle rettigheter reservert.</p>
+    </footer>
+</body>
+</html>

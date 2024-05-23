@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Læringsportalen</title>
+    <link rel="stylesheet" type="text/css" href="js.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Velkommen til JavaScript Læringsportalen!</h1>
+        <p>Lær hvordan du kan gjøre nettsidene dine interaktive med JavaScript.</p>
+        <h2> <a href="index.html">Return to mainpage</a></h2>
+    </header>
+    <main>
+        <section>
+            <h2>Grunnleggende JavaScript</h2>
+            <p>JavaScript er et programmeringsspråk som lar deg lage dynamiske og interaktive nettsider. Her er et enkelt eksempel:</p>
+            <pre><code>// JavaScript for å endre innholdet i en paragraf
+document.getElementById("demo").innerHTML = "Hello, JavaScript!";</code></pre>
+            <button onclick="changeText()">Klikk for å endre tekst</button>
+            <p id="demo">Dette er en paragraf som vil bli endret.</p>
+        </section>
+        <section>
+            <h2>Variabler og Funksjoner</h2>
+            <p>Variabler brukes til å lagre data, og funksjoner brukes til å utføre handlinger. Her er et eksempel:</p>
+            <pre><code>// Definer en variabel
+let name = "";
+
+function askName() {
+    name = prompt("Hva heter du?");
+    alert("Hei, " + name + "!");
+}</code></pre>
+            <button onclick="askName()">Klikk for å oppgi navn</button>
+        </section>
+        <section>
+            <h2>Event Listeners</h2>
+            <p>Event listeners lar deg kjøre kode når brukeren utfører visse handlinger, som å klikke på en knapp. Her er et eksempel:</p>
+            <pre><code>// Legg til en event listener til en knapp
+document.getElementById("eventButton").addEventListener("click", function() {
+    alert("Knappen ble klikket!");
+});</code></pre>
+            <button id="eventButton">Klikk meg</button>
+        </section>
+    </main>
+    <footer>
+        <p>Ha det gøy med å utforske JavaScript! 😊</p>
+        <p>© 2024 JavaScript Læringsportalen. Alle rettigheter reservert.</p>
+    </footer>
+</body>
+</html>
